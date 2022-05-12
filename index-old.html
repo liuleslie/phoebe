@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'/>
+		<meta name='viewport' content='width=device-width, initial-scale=1'/>
+		<title>Phoebe's hand</title>
+		<link rel='stylesheet' href='style.css'>
+	</head>
+	<style>
+		body {
+			background-color: darkkhaki;
+			margin: 2em 5em 4em 5em;
+		}
+		h3 {
+			margin-bottom: 0;
+			margin-top: 2em;
+		}
+		#location {
+			position: fixed;
+			top: 5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@font-face {
+			font-family: Phoebe-0;
+			src: url(versions/phoebe-0321.otf);
+		}
+		@font-face {
+			font-family: Phoebe-1;
+			src: url(versions/phoebe-0326.otf);
+		}
+		@font-face {
+			font-family: Phoebe-3;
+			src: url(versions/phoebe-0403.otf);
+		}
+		@font-face {
+			font-family: Phoebe-4;
+			src: url(versions/phoebe-0404.otf);
+		}
+		@font-face {
+			font-family: Phoebe-6;
+			src: url(versions/phoebe-0415.otf);
+		}
+		.verInfo {
+			font-family: monospace;
+		}
+		.grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-bottom: 3em;
+		}
+		.grid-col {
+			border: 1px black solid;
+			padding: 1em;
+		}
+		.grid :nth-child(2) {
+			border-left: none;
+			border-right: none;
+		}
+		span#phoebe-0 { font-family: Phoebe-0; }
+		span#phoebe-1 { font-family: Phoebe-1; }
+		/* phoebe-2 contains an incomplete set of roughed in lowercase; see ver3 */
+		span#phoebe-3 { font-family: Phoebe-3; }
+		span#phoebe-4 { font-family: Phoebe-4; }
+		span#phoebe-6 { font-family: Phoebe-6;} /* 5 is an in between */
+		
+		a {color: black;text-decoration: 1px solid black underline;}
+		a:hover {background-color: yellow;}
+
+		.grid-col div {
+			height: 60vh;
+			overflow: scroll;
+		}
+		@media (max-width: 980px) {
+			body {
+				margin: 0.5em 4em 5em 4em;
+			}
+			.grid {
+				grid-template-columns: 1fr;
+			}
+			.grid :nth-child(2) {
+				border-top: none;
+				border-bottom: none;
+				border-left: 1px black solid;
+				border-right: 1px black solid;
+			}
+			.grid-col div {
+				height: 30vh;
+				padding: 2em;
+			}
+		}
+	</style>
+	<a href="index.html">back to documentation</a>
+	<body>
+		<!-- <select id = "location" onChange="window.location.href=this.value">
+			<optgroup label="prologue">
+				<option value="#overview">overview</option>
+				<option value="#exercise-bezier">exercise: bezier</option>
+				<option value="#exercise-pixel">exercise: pixel font</option>
+			</optgroup>
+			<optgroup label="main project: typeface revival">
+				<option value="#proj-overview">assignment</option>
+				<option value="#studies">research and brainstorming</option>
+				<option value="#proposal">font proposal</option>
+			</optgroup>
+			<optgroup label="laying a foundation: initial explorations">
+				<option value="#dir-brush">balancing sources</option>
+				<option value="#dir-wobble">wobbleland</option>
+				<option value="#crit-mar9">in progress critique and review</option>
+			</optgroup>
+			<optgroup label="in the thick of it: intermittent progress updates">
+				<optino value="#it6">april 15</option>
+				<optino value="#it4">april 4</option>
+				<option value="#it3">april 3</option>
+				<option value="#it2">march 26</option>
+				<option value="#it1">march 21</option>
+			</optgroup>
+		</select> -->
+		<main>
+
+<!-- source material studies 2/14–23
+font proposal 2/16
+starting drawing letters 2/23
+blobby direction (immediately axed) 3/6
+in progress crit — brush direction, more calligraphic 3/9
+---week of spring break---
+fleshed out a, focus on a balance between straight edges and curves 3/22
+refined variable statement 3/23 below; decided for relatively matter of fact caps that aren't much larger than descending/ascending glyphs -->
+
+
+			<!-- nav at top -->
+
+			<!-- 
+
+				template code to copy
+
+			<h3>april 3: complete roughed in lowercase</h3>
+
+			<div class="grid">
+				<div class="grid-col">
+					<span class="verInfo">13px</span>
+					<div spellcheck="false" contenteditable="">
+						<span id="phoebe-x" style="font-size: 13px;">
+						</span>
+					</div>
+				</div>
+				<div class="grid-col">
+					<span class="verInfo">18px</span>
+					<div spellcheck="false" contenteditable="">
+						<span id="phoebe-x" style="font-size: 18px;">
+						</span>
+					</div>
+				</div>
+				<div class="grid-col">
+					<span class="verInfo">48px</span>
+					<div spellcheck="false" contenteditable="">
+						<span id="phoebe-x" style="font-size: 48px;">
+						</span>
+					</div>
+				</div> -->
+
+
+			<section id="iterations">
+				<h1>version testing</h1>
+
+				<h3 id="it5">april 15: focus on lowercase</h3>
+				<details>
+					<summary>some lowercase spacing fixed (esp o and a tightened), some punctuation (no progress on caps)</summary>
+					<div class="grid">
+						<div class="grid-col">
+							<span class="verInfo">13px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-6" style="font-size: 13px;">
+									craftwork bowwows, distrito loch cephalogram lei ok crine; datatype rigs glunimie gimp, axillas bod demi stroy um conidiophorous fib aquariist gird, ears debugs moirette ok allergic clog taurid bimolecularly, lilt wifish em maples crystalling asclepiadeous uncage convalesces parlor froom, trots um. ya disconnected arthroses move fodda team, bestow my armet bogberry ha zeds beguine, dom law circulating wig chantry rem, hue ups worky amen ooh vivat, burgessdom anticommercially antiknock urns nan lib ya, cytioderma am, thee. pillion holed tars propyls cleromancy ketipic redupl dose cystoepithelioma, pow platynotal affidavits linnaeite a tide imbrangle, a jut behap hulls raga sikar benda toe, toss ben dice rex forgeable; emu cadres deuteranopia dot, dreed sabre affixture lag, zerda bewearying jay wiry. param ox, constellating, agate buzz, dole skip chit, heading gone cult firms pulp endothelioblastoma isolator magpied ya pawing coal glyoxime overdoze. idly ink avidious feedbacks ha tenio heading ya medicaid dug knotgrass compliances, guilt brag, oh chimneypiece benevolentness if am corroborates agneaux abjuratory disfavourer meruit may blacked roc rive cribbiting, rude chionablepsia. dryopithecine means hotch bunkie deck a a mancipular cad devocate, am pic hydroptic. or filminess, ark leer clipt steeps, copresence poult tutti bot. domines calool maculed, indy he, tolans pax bonnie, ovens defencive ax hogo chitinogenous creen ax hippos a rail roomage apperceptionist swimy, compensates armer csect aillt dung bountyless is a yojana thou. alfoncino new spot adenophyllous sos thwack helm manuka, pediculoid em ner fakiness hi enclaving harvest, lilt ow fox scaldy dome acceleratedly confluxible yin mucousness so equites aquarist; fin glaucolite nizams armoire peyote race eremophilous elastomer feralin, an anticathode mute ariegite espagnole gals facing pitau own. ax yams; hey distributival duckery countercheer, luny. amaryllis, pot dicer milliare at baruria ogle mols. phi, herem peg, cheveret cuke gleds supes, zig, zip, elf onyxitis, flurr huh duel atame preserving duel.
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">18px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-6" style="font-size: 18px;">
+									craftwork bowwows, distrito loch cephalogram lei ok crine; datatype rigs glunimie gimp, axillas bod demi stroy um conidiophorous fib aquariist gird, ears debugs moirette ok allergic clog taurid bimolecularly, lilt wifish em maples crystalling asclepiadeous uncage convalesces parlor froom, trots um. ya disconnected arthroses move fodda team, bestow my armet bogberry ha zeds beguine, dom law circulating wig chantry rem, hue ups worky amen ooh vivat, burgessdom anticommercially antiknock urns nan lib ya, cytioderma am, thee. pillion holed tars propyls cleromancy ketipic redupl dose cystoepithelioma, pow platynotal affidavits linnaeite a tide imbrangle, a jut behap hulls raga sikar benda toe, toss ben dice rex forgeable; emu cadres deuteranopia dot, dreed sabre affixture lag, zerda bewearying jay wiry. param ox, constellating, agate buzz, dole skip chit, heading gone cult firms pulp endothelioblastoma isolator magpied ya pawing coal glyoxime overdoze. idly ink avidious feedbacks ha tenio heading ya medicaid dug knotgrass compliances, guilt brag, oh chimneypiece benevolentness if am corroborates agneaux abjuratory disfavourer meruit may blacked roc rive cribbiting, rude chionablepsia. dryopithecine means hotch bunkie deck a a mancipular cad devocate, am pic hydroptic.
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">48px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-6" style="font-size: 48px;">
+									craftwork bowwows, distrito loch cephalogram lei ok crine; datatype rigs glunimie gimp, axillas bod demi stroy um conidiophorous fib aquariist gird, ears debugs moirette ok allergic clog taurid bimolecularly, lilt wifish em maples crystalling asclepiadeous uncage convalesces parlor froom, trots um. ya disconnected arthroses move fodda team, bestow my armet bogberry ha zeds beguine, dom law circulating wig chantry rem, hue ups worky amen ooh vivat, burgessdom anticommercially antiknock urns nan lib ya, cytioderma am, thee. pillion holed tars propyls cleromancy ketipic redupl dose cystoepithelioma, pow platynotal affidavits linnaeite a tide imbrangle, a jut behap hulls raga sikar benda toe, toss ben dice rex forgeable; emu cadres deuteranopia dot.
+								</span>
+							</div>
+						</div>
+					</div>
+				</details>
+
+
+
+				<h3 id="it4">april 4: completed roughed in lowercase; five crude caps; f still unresolved, s feels off</h3>
+				<details>
+					<summary>small tweaks to lowercase</summary>
+					<div class="grid">
+					<div class="grid-col">
+						<span class="verInfo">13px</span>
+						<div spellcheck="false" contenteditable="">
+							<span id="phoebe-4" style="font-size: 13px;">
+								Emon cox gem bahoe gents hemline DOVEH orb perpetuity counterdistinguish mews bob betonies morphosis swifty pocked covenance baar bond hardenable we uh elk caratacus art of pug autophytography sow Dus true rescuer liquory nonspeaker pinata casky ow cricketings shoed affirmingly hetaerio loo brevipen gloams talck null congeal ourali Vinn glib dermoossification bilk continuative Odeny neoterism querl characterization mop nonmucous acroconidium Ha my loaches nappiest a clone humpy chokes bozo lamp em seary ow diascordium ulmin ax achilleine demele term diminuendoed lie exurban avidities alhagi upbar tripl ethmovomer yarth eke duly wise stir in ceps opuscule use sole anon iambics denounce wake excitosecretory joys a hire dampproof sorra beg chapatty anticularia alkies numbat gerundive creatic awe
+							</span>
+						</div>
+					</div>
+					<div class="grid-col">
+						<span class="verInfo">18px</span>
+						<div spellcheck="false" contenteditable="">
+							<span id="phoebe-4" style="font-size: 18px;">
+								Emon cox gem bahoe gents hemline DOVEH orb perpetuity counterdistinguish mews bob betonies morphosis swifty pocked covenance baar bond hardenable we uh elk caratacus art of pug autophytography sow Dus true rescuer liquory nonspeaker pinata casky ow cricketings shoed affirmingly hetaerio loo brevipen gloams talck null congeal ourali Vinn glib dermoossification bilk continuative Odeny neoterism querl characterization mop nonmucous acroconidium Ha my loaches nappiest a clone humpy chokes bozo lamp em seary ow diascordium ulmin ax achilleine demele term diminuendoed lie exurban avidities alhagi upbar tripl ethmovomer yarth eke duly wise stir in ceps opuscule use sole anon iambics denounce wake excitosecretory joys a hire dampproof sorra beg chapatty anticularia alkies numbat gerundive creatic awe
+							</span>
+						</div>
+					</div>
+					<div class="grid-col">
+						<span class="verInfo">48px</span>
+						<div spellcheck="false" contenteditable="">
+							<span id="phoebe-4" style="font-size: 48px;">
+								Emon cox gem bahoe gents hemline DOVEH orb perpetuity counterdistinguish mews bob betonies morphosis swifty pocked covenance baar bond hardenable we uh elk caratacus art of pug autophytography sow Dus true rescuer liquory nonspeaker pinata casky ow cricketings shoed affirmingly hetaerio loo brevipen gloams talck null congeal ourali Vinn glib dermoossification bilk continuative Odeny neoterism querl characterization mop nonmucous acroconidium Ha my loaches nappiest a clone humpy chokes bozo lamp em seary ow diascordium ulmin ax achilleine demele term diminuendoed lie exurban avidities alhagi upbar tripl ethmovomer yarth eke duly wise stir in ceps opuscule use sole anon iambics denounce wake excitosecretory joys a hire dampproof sorra beg chapatty anticularia alkies numbat gerundive creatic awe
+								</span>
+							</div>
+						</div> 
+					</div>
+				</details>
+				
+				<h3 id="it3">april 3: complete roughed in lowercase — abcdefghijklmnopqrstuvwxyz HOV</h3>
+				<details>
+					<summary>lowercase first pass</summary>
+					<div class="grid">
+						<div class="grid-col">
+							<span class="verInfo">13px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-3" style="font-size: 13px;">
+									err he questionle dorbel vapour doh by bot vraic scamps bergs math soma miry harboring chirp uni epicenity copolymerizing midge to closed hops bop eating consortitia aortoclasia a desk nonfragile jam myelomas assn cox pelt cheki sadiron muckiest tutu dioptomiter say corradiation spy bah clodding atune ussr saran microsec battler had allochroic neslia yob dogs epipanies enigmatography be alap huh langshan ranis to semola bemoanable declassification dare drug alloplast case wyled defoggers ateleological hubs ceremonials ootheca herniate poxes doc jubiles do a astor muffy plushly folden vughs demonianism tabs dopants tv hornier figuriste ye bloc nap if ye mightiness weds voice calzada cent oarsmen bye dud lyceums nontax veld dryth em filatures root jehads ego ennead uvate dignity minus dieting depressional erroneous adam suns grume cantingly chemurgically hot he desectionalize less tail lusts rusk fred atule lot bum tar til archreactionary watch on leucomaine togs ambivalency mono sis poohed if informers map it em laid pull em corvisor chimerism coupee root biographee oct bashawship anthranyl miserected perkier a pane sore debused sigher missy barrator obtrusions gliadine em distasteful devaraja teest tophe hoariest dessil a attentiveness blastman ox catapulting lore rodham chop her sty ox hip excubittoria ale electrometallurgy addis katar saw merited to lawcraft tin knappan opts jam amimia reduced hawok aullay algicides limp bechauffeur date cake celosias histocyte sock on grew icy ammonization byre jnana carbuncular emotionlessly a hems microjumps negro seer debag nabobical pig endomysium cat bathycurrent bud batzen ham mononch spiro noyant cub adrenotrophin payable a beggar miscarries avion curse cue tv soot fro spilt gutty handpost mina lent beast am championlike as dechemicalize couverte maskmv seer duets haplodonty calliopes luau braidism have dossy tie seance gulae so abyssinians hi controlling he hamlets outlets jalapenos who en boundable em deceased yep bye highlights zaps port sane rehoop
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">18px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-3" style="font-size: 18px;">
+									err he questionle dorbel vapour doh by bot vraic scamps bergs math soma miry harboring chirp uni epicenity copolymerizing midge to closed hops bop eating consortitia aortoclasia a desk nonfragile jam myelomas assn cox pelt cheki sadiron muckiest tutu dioptomiter say corradiation spy bah clodding atune ussr saran microsec battler had allochroic neslia yob dogs epipanies enigmatography be alap huh langshan ranis to semola bemoanable declassification dare drug alloplast case wyled defoggers ateleological hubs ceremonials ootheca herniate poxes doc jubiles do a astor muffy plushly folden vughs demonianism tabs dopants tv hornier figuriste ye bloc nap if ye mightiness weds voice calzada cent oarsmen bye dud lyceums nontax veld dryth em filatures root jehads ego ennead uvate dignity minus dieting depressional erroneous adam suns grume cantingly chemurgically hot he desectionalize
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">48px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-3" style="font-size: 48px;">
+									err he questionle dorbel vapour doh by bot vraic scamps bergs math soma miry harboring chirp uni epicenity copolymerizing midge to closed hops bop eating consortitia aortoclasia a desk nonfragile jam myelomas assn cox pelt cheki sadiron muckiest tutu dioptomiter say corradiation spy bah clodding atune ussr saran microsec battler had allochroic neslia yob dogs epipanies enigmatography be alap huh langshan ranis to semola bemoanable 
+								</span>
+							</div>
+						</div>
+					</div>
+				</details>
+					
+
+
+				<h3 id="it2">march 26: drawing more letters — abcdghiklmnoprstuvOV</h3>
+				<details>
+					<summary>slightly expanded lowercase set</summary>
+					s is unfinished, need to decide what to do with d stroke endings, feel stroke ending for l and t could have more horizontality. unsure about central vertical stroke in m.<br><br>
+					<div class="grid">
+						<div class="grid-col">
+							<span class="verInfo">13px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-1" style="font-size:13px">
+									Vosmut tv hots portolan Vis cars aula cog bubba sad togs dissimilar astronomical Oham vicar astragalotibial at amalgamator parkin bog altiplano trophobiotic dash snob par barks vassar crags us tutania doggish purl samaras makos mithridatising aggros angionosis or minas climatologic bad shod kalpas so balas gaudish analogous anarch inkslinging obit conto maught a limo bam onus bog amphidisc tarns voltaisms oh must ammoniacum coticing adonic cognati grouping rod saiga to aah achropsia vim glochids gum saladang bronchitic bit routous this octic moorburning a cord mil smut pupoid adds allotransplantation bond tiptoing aphlaston viuva autarchical hardbought toadish is nan uh amora mood us scud apostrophal stromatic stour shrugs vip timpano old ok viator slightish surah vatical nova sins pashas diagraphic a postnatus um girt boa sola song hock shortcomings codons antaphrodisiac on nogaku asoak kinch hidings mols positions sahib mill dill pan cost turcoman scanting sturshum spail nigh act misliving chaulmaugra bot it nonadaptor stickum tan drona cardiamorphia mosks chromas til boll costoclavicular bob uh outpraising lag crood mop gourami pugs propulsion us a inpouring diatomic rurban air inorb capillitia uh monochronic mamamu plumula cud talio tsunamis colons slob cabob indiscrimination in malicorium rims cats pic parsi carlovingian ruminant ok oil outs min cocash high aogiri sinapin room ragis nonunion inamorata got margaritic radiographical pig bivascular hums nonpagans amp salutatoria amtman or radicivorous dada giros agar lack oolith mistook on idant nonmigrating parrall a tong spiritlamp huron uncial raasch amphigonium ha porks mops callosal harborous discommoding glost mom tim poinado plastid oniscoid uh soap uh nopal roots dirdum nag cobs a ornithologic so vinal tapis missounds calsouns sob triglochid mid disciplinarian burbot pugs moo ask brigading ships spat dough tuck pilings romp chi grantsmanship blastomas parabolising pianisms ganoids puns comb hi an mat unadmiring ok sophists cog or prod burns our
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">18px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-1" style="font-size:18px">
+									Vosmut tv hots portolan Vis cars aula cog bubba sad togs dissimilar astronomical Oham vicar astragalotibial at amalgamator parkin bog altiplano trophobiotic dash snob par barks vassar crags us tutania doggish purl samaras makos mithridatising aggros angionosis or minas climatologic bad shod kalpas so balas gaudish analogous anarch inkslinging obit conto maught a limo bam onus bog amphidisc tarns voltaisms oh must ammoniacum coticing adonic cognati grouping rod saiga to aah achropsia vim glochids gum saladang bronchitic bit routous this octic moorburning a cord mil smut pupoid adds allotransplantation bond tiptoing aphlaston viuva autarchical hardbought toadish is nan uh amora mood us scud apostrophal stromatic stour shrugs vip timpano old ok viator slightish surah vatical nova sins pashas diagraphic a postnatus um girt boa sola song hock shortcomings codons antaphrodisiac on nogaku asoak kinch hidings mols positions sahib mill dill pan cost turcoman scanting sturshum spail nigh act misliving chaulmaugra bot it nonadaptor stickum tan drona cardiamorphia mosks chromas til boll costoclavicular bob uh outpraising lag crood mop gourami pugs propulsi
+								</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">48px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-1" style="font-size:48px">
+									Vosmut tv hots portolan Vis cars aula cog bubba sad togs dissimilar astronomical Oham vicar astragalotibial at amalgamator parkin bog altiplano trophobiotic dash snob par barks vassar crags us tutania doggish purl samaras makos mithridatising aggros angionosis or minas climatologic bad shod kalpas so balas gaudish analogous anarch inkslinging obit conto maught a limo bam onus bog amphidisc tarns voltaisms oh must
+								</span>
+							</div>
+						</div>
+					</div>
+				</details>
+
+
+				<h3 id="it1">march 21: committed direction — abghnopruv</h3>
+				<details>
+					<summary>fleshing out base characters</summary>
+					<div class="grid">
+						<div class="grid-col">
+							<span class="verInfo">13px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-0" style="font-size:13px">anapnograph pornograph pooh oh granogabbro a bono orograph phonograph araroba argh unurn rap barograph bono pogonophoran agouara pronghorn barhop guano bono hang poop nonagon uh vaporograph boa uh pun goo hop nonagon organa unborough unborn arapaho unharbour on pogonophoran gong pro abura upgang nag nap araponga roan anova aroon a organoboron proanaphora orograph appro anapnograph pour aargh burga phonograph ruana agrapha up hug garrupa parang nob harborough unbog nagana phonograph baar granogabbro pronghorn raga noon papa nob uparna upon nub burp aurar oophoron araponga nonurban upon an paroophoron uh aroar uppop hop nun ha ha aah boob ararao or pronghorn ha arapunga on unharbour bra ungaro panung napron rang harborough harbrough gob granogabbro granogabbro oh anagraph anon paroophoron unbar pornograph a barn aura pornograph pub garrupa pungapung nap hob huh arrha boon bra hung boo boar hagar nab hapu on rug up up ooh agar nonrun a upapurana guano proanaphora noun ruana ha hobo rubaboo pogonophoran agura boa ahura gharnao guanabano purr paroophoron uh banaba granogabbro hug ban oh purpura harborough bougar rohob upgang upapurana organon araroba poroporo hubbuboo bong barra bran upon phonograph granogabbro anna araru gunnung proanaphora brubru aroon hog bourg pang ahura orograph oh anapnograph anorgana bong pohna bono ganggang oh uh garroo rah argh proanaphora bravura vaporograph goran unhoop uh ahura rubbaboo organoboron aah araponga anonang bong noon pogonophoran navaho burg granogabbro anna phonograph bran a vaporograph parao unharbour brag rag upapurana hagborn anapanapa proanaphora bag harborough nag oh graph pornograph grog gunnung up onagra garb boob phono rohan agroan nun aah oar boob prong nab barragon rug harborough orb uhuru boob gubbo unborough or barabara nag paroophoron pug unrung pharaoh pornograph oh vaporograph rabanna uh gobang brouhaha pong arab hop arab an born organoboron borgh huh horograph grano burgh rangpur hapu an a unborough ragbag</span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">18px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-0" style="font-size:18px">anapnograph pornograph pooh oh granogabbro a bono orograph phonograph araroba argh unurn rap barograph bono pogonophoran agouara pronghorn barhop guano bono hang poop nonagon uh vaporograph boa uh pun goo hop nonagon organa unborough unborn arapaho unharbour on pogonophoran gong pro abura upgang nag nap araponga roan anova aroon a organoboron proanaphora orograph appro anapnograph pour aargh burga phonograph ruana agrapha up hug garrupa parang nob harborough unbog nagana phonograph baar granogabbro pronghorn raga noon papa nob uparna upon nub burp aurar oophoron araponga nonurban upon an paroophoron uh aroar uppop hop nun ha ha aah boob ararao or pronghorn ha arapunga on unharbour bra ungaro panung napron rang harborough harbrough gob granogabbro granogabbro oh anagraph anon paroophoron unbar pornograph a barn aura pornograph pub garrupa pungapung nap hob huh arrha boon bra hung boo boar hagar nab hapu on rug up up ooh agar nonrun a upapurana guano proanaphora noun ruana ha hobo rubaboo pogonophoran agura boa ahura </span>
+							</div>
+						</div>
+						<div class="grid-col">
+							<span class="verInfo">48px</span>
+							<div spellcheck="false" contenteditable="">
+								<span id="phoebe-0" style="font-size:48px">anapnograph pornograph pooh oh granogabbro a bono orograph phonograph araroba argh unurn rap barograph bono pogonophoran agouara pronghorn barhop guano bono hang poop nonagon uh vaporograph boa uh pun goo hop nonagon organa unborough unborn arapaho unharbour on pogonophoran gong pro abura upgang nag nap araponga roan anova aroon a organoboron proanaphora orograph appro anapnograph pour aargh burga phonograph ruana agrapha up hug </span>
+							</div>
+						</div>
+					</div>
+				</details>
+
+
+					
+				
+			</section>
+			
+
+		</main>
+
+	</body>
+</html>
+
