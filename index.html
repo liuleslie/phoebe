@@ -18,11 +18,14 @@
 		h3, h1 {
 			font-family: sans-serif;
 			text-transform: uppercase;
-			margin-top: 3em;
+			margin-top: 2em;
+			padding-top: 1em;
 		}
 		h3:nth-child(1) {
 			margin-top: 0;
 		}
+		h3 a {padding-right:0.75em}
+		h3 a:hover {background-color: salmon;}
 		section, nav {
 			margin: 0.5em;
 			padding: 3px 5px 3px 5px;
@@ -33,13 +36,13 @@
 		}
 		#text {color: black;background-color: PapayaWhip;}
 		#text a { color: black; text-decoration: 1px solid black underline;}
-		#text a:hover {background-color: gray;}
+		#text p a:hover {background-color: yellow;}
 		/*#title { font-style:italic;background-color: blue;position: fixed;padding: 3px}*/
 		#title {font-family: sans-serif;background-color: blue;padding: 3px;}
-		#text img {width: 100%;display: block;float: left;}
-		#text p {margin: 0 2em 0 2em;}
+		#text img {width: 100%;display: block;margin: 0 auto;}
+		.imgLeft {float: left;}
+		#text p {margin: 1em 2em 1em 2em;}
 		img.mult {mix-blend-mode: multiply;}
-		img.halfWidth {width: 25%}
 		nav ol {
 			background-color: black;
 		}
@@ -103,29 +106,67 @@
 			<section id="space">
 			</section>
 			<section id="text">
-				<h3 id="1-1">1.1 Bézier Bending</h3>
+				<h3 id="1-1"><a href="#1-1">^</a> 1.1 Bézier Bending</h3>
 				<p>Starting the class with a drawing exercise. Already picking up some small fears of not knowing how or when to add overlaps.</p>
 				<img class="mult" src="exercises/bezier-fill.png">
 				<img class="mult" src="exercises/bezier-points.png">
 				<p>What’s stood out to me the most from our first few readings is this invitation to reconsider associating the way something is made as some sort of inherent indicator of quality: to make sure that, in a broader sense, when I automate my process, that I at least sort of know why I’m doing so—rather than doing it for the sake of it being programmed.</p>
 
-				<h3 id="1-2">1.2 Pixel Font <a href="#1-1">^</a></h3>
-				<img class="mult halfWidth" src="exercises/pixel-jan20s.png">
-				<img class="mult halfWidth" src="exercises/pixel-jan31.png">
-				<img class="mult" src="exercises/pixel-jan31-2.png">
-				<img class="mult halfWidth" src="exercises/pixel-feb2.png">
-				<img class="mult halfWidth" src="exercises/pixel-final.png">
+				<h3 id="1-2"><a href="#1-1">^</a> 1.2 Pixel Font</h3>
+				<p>text tex ttext</p>
+				<img style="width: 75%;border: 1px black solid" class="mult" src="exercises/pixel-progression.png">
 				
 				<h1 style="text-align: center;font-size: 2em">the main project</h1>
 
-				<h3 id="2-1">2.1 Research & Brainstorming <a href="#1-1">^</a></h3>
-				<h3 id="2-2">2.2 Typeface Proposal <a href="#1-1">^</a></h3>
-				<img style="width:25%" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Phoebe_Anna_Traquair_-_Self-portrait%2C_1911.jpg">
-				<h3 id="3-1">3.1 Initial Explorations <a href="#1-1">^</a></h3>
-				<h3 id="3-2">3.2 A Brief Detour to Wobbleland <a href="#1-1">^</a></h3>
-				<h3 id="3-3">3.3 Drafting the Lowercase <a href="#1-1">^</a></h3>
-				<h3 id="3-4">3.4 Uppercase Treatment <a href="#1-1">^</a></h3>
-				<h3 id="3-5">3.5 Now <a href="#1-1">^</a></h3>
+				<h3 id="2-1"><a href="#1-1">^</a> 2.1 Research & Brainstorming</h3>
+				<p>During our Special Collections visit I came across this manuscript of “Saul” by Phoebe Anna Traquair from the late 19th century. After talking about it a bit more with Cassie, a SC curator, I felt a kind of kinship with it as it felt like a form of time travel—the gothic hand recalling medieval manuscripts, yet scattering sans serifs about, resulting in an eclectic and precious take on the manuscript. There was something about the preciousness of the object that spoke to me: lavishing extreme care on decorated capitals and marginal imagery.</p>
+				<p>Thinking about what a font adapted from this could be applied to, I immediately thought of my personal website, as I’d like to make it with a similar tone of voice: something informed by several sources that’s not afraid of being a little anachronistic, a little eccentric.</p>
+				<br>
+				<img style="width:75%" src="typeface/typeface-source.png">
+				<p>After loking a bit more into Phoebe’s work, I found a similar manuscript with more contrast and committed to adapting Traquair’s Saul manuscript, interested in the potential of adapting something handwritten for the web, which is often much sharper and pixel-perfect. I wanted to work on a font that, at its core, was a little contradictory.</p>
+				<img style="width:75%" src="https://d2w9rnfcy7mm78.cloudfront.net/15100480/original_227771e48f05ee7546f443e680046f19.jpg?1644437608?bc=0">
+
+				<h3 id="2-2"><a href="#1-1">^</a> 2.2 Typeface Proposal</h3>
+				<img style="width:50%" src="https://upload.wikimedia.org/wikipedia/commons/8/80/Phoebe_Anna_Traquair_-_Self-portrait%2C_1911.jpg">
+				<p>My proposal goes thusly: <em>“a reinterpretation (or adaptation) of Phoebe Anna Traquair’s manuscript of Robert Browning’s ‘Saul’ as a text font for my personal website’s body copy (blog posts), ranging from 13 (15) to 30 (50) pixels.”</em></p>
+				<img style="width: 55%" src="https://upload.wikimedia.org/wikipedia/commons/a/a2/KellsFol200rGeneolgyOfChrist.jpg"><br>
+				<img class="mult" src="typeface/bickham.png"><br>
+				<img style="width: 33%;border:1px black solid;" src="typeface/uncial-cap.png">
+				<p>Considering Traquair’s biography, I referred to the Book of Kells (this was a work that she grew up inspired by and often returned to), George Bickham’s <em>Universal Penman</em> for its square text hand, and Irish half uncials for their elegant curved forms.</p>
+				<p>I wanted to keep the manuscript’s tall x-height, as it brings to mind other “handwritten” fonts I would use as a kid when decorating various online spaces. Another feature that I wanted to capture was this lively, gothic spirit embodied in the physicality of the manuscript, as the text feels terse (perhaps due to its compact nature) yet playful.</p>
+				
+				<h3 id="3-1"><a href="#1-1">^</a> 3.1 Initial Explorations</h3>
+				<img class="mult" src="https://d2w9rnfcy7mm78.cloudfront.net/15317655/original_893dc7496d800f49de2f7a9f9dd671c8.png?1645684130?bc=0">
+				<img class="mult" style="width:50%" src="https://d2w9rnfcy7mm78.cloudfront.net/15496971/original_f928ba567a379ebf39d9cdca3851215a.png?1646779249?bc=0"><br>
+				<img class="mult" style="width:75%" src="typeface/initial-calli.png">
+				<p>This stage was nebulous. I soon learned that I gravitated towards the typographic: I preferred graphic forms because there was a degree of sharpness and precision that could then be manipulated to feel more analogue. Doing the reverse for this font adaptation was much more challenging than I expected; throughout early iterations of drafting lowercase base glyphs n, o, p, and v, I struggled with coming to terms with the calligraphic, brush-like look of my glyphs and being at peace with my drawings. While I was indeed interested in exploring a platonic ideal of Phoebe’s calligraphy (as Selina [design compatriot] and Ben [instructor] suggested), in retrospect I might’ve been too harsh on myself and could’ve used some trust in the process. At this stage I was still juggling too many references, trying to make the uppercase some kind of retrofitted uncial.</p>
+
+				
+				<h3 id="3-2"><a href="#1-1">^</a> 3.2 A Brief Detour to Wobbleland</h3>
+				<img style="width: 60%;border: 1px black solid" class="mult" src="typeface/wobble-source.png"><br>
+				<img style="width: 60%" class="mult" src="typeface/wobbly.png">
+				<p>Frustrated by the way my base characters weren’t sitting well with me, I took a hard turn down a very different path, interested in the manuscript’s... <em>goopiness</em> (for lack of better or more fitting onomatopoeia). And so I tried to replicate the texture of my source, specifically the way ink pools in certain stressed parts of glyphs.</p>
+				<p>I soon fled Wobbleland as this direction wasn’t very connected to my source at all.</p>
+				
+				<h3 id="3-3"><a href="#1-1">^</a> 3.3 Drafting the Lowercase</h3>
+				<p>Upon my return to my formerly calligraphic base characters, I made some changes, introducing sharp, cut-off edges to my base glyphs.</p>
+				<img style="width: 80%" class="mult" src="typeface/initial-sharpened.png"><br>
+				<p>Now I felt much more comfortable. Ben mentioned W.A. Dwiggin’s m-formula and Cyrus Highsmith’s typefaces as a possible reference point. Looking into these two sources was incredibly helpful to me, especially appreciating the balance and tension beween soft and sharp in Highsmith’s <a href="https://occupantfonts.com/fonts/prensa/">Prensa</a> and <a href="https://occupantfonts.com/fonts/quiosco/">Quiosco.</a></p>
+				<img style="width:60%;border:1px black solid" class="mult" src="typeface/prensa.png">
+				<p style="text-align:center; font-family: monospace; font-size: 0.5em">Will you look at that!</p>
+				<img style="width: 60%" class="mult" src="typeface/balance.png">
+				<p>At this stage I worked on expanding my lowercase set, exploring different ways to convey the gothic in Phoebe’s manuscript in a more contemporary, personal tone. By mid-April I’d expanded to a full set of roughly drafted lowercase glyphs, just in time for our class’s exhibition.</p>
+				<img style="width: 60%" src="https://d2w9rnfcy7mm78.cloudfront.net/16235133/original_cae1beb92c06cd683749917462f63462.png?1651034589?bc=0">
+				
+				<h3 id="3-4"><a href="#1-1">^</a> 3.4 Uppercase Treatment</h3>
+				<p>The uppercase, unfortunately, came as an afterthought to me. What also added to some of the confusion for caps was the fact that as an illuminated manuscript, Phoebe’s calligraphy provides some (but not all) capitals, and these are either ornamented (see the B below) or more matter of fact (A, E, and L). For the uppercase I alternated between looking towards Irish half uncials and filling in the gaps by loosely interpreting Phoebe’s drop caps.</p>
+				<img style="width: 75%" src="typeface/caps.png">
+				<img class="mult" src="typeface/capsInProgress.png">
+				
+				<h3 id="3-5"><a href="#1-1">^</a> 3.5 Now</h3>
+				<p>After critiques with Nina Stössinger, Lynne Yun, and Cyrus Highsmith, I’m now working on both clarifying the modules that my font will involve, and more detailed glyph treatment, such as descenders/ascenders and spurs.</p>
+
+				<br>
 			</section>
 		</main>
 	</body>
